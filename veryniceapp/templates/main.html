@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeryNice portfolio</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/style3.css'%}">
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="{%static 'css/images/globe.gif'%}" alt="globe" style="width: 125px; height: 125px;">
+            <h1 id="nameheader">Ezekiel Medina</h1>
+
+            <a href="static/css/images/resume.pdf">Resume</a>
+            <a href="learnmore">Learn more about Ezekiel</a>
+            <a href="veryniceprod">VeryNice products</a>
+        </div>
+
+        <div id="contactinfo">
+            <ul>
+                <li><a href="https://github.com/Ezekiel">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/ezekiel-medina-0175a3206">Linkedin</a></li>
+                <li>Email: EzekielDev01@gmail.com</li>
+            </ul>
+        </div>
+
+        <div id="bio">
+            <p id="biotext">Ezekiel Medina born in Hoffman Estates, Illinois, March 3 1997,<br>
+                Inspired by the interent culture, he decided to <br>
+                pursue software engineering and enroll into Coding Dojo <br>
+                As he continues to push for optimism and creativity,<br> he wishes to land a career among some of
+                the
+                top
+                Web<br>
+                Developers in America. <br>Below you can find more of what Ezekiel has been up to.
+            </p>
+        </div>
+
+        <h1 id="projectheader">Projects</h1>
+
+        <div id="project1">
+            <p id="project1text">Here is a screenshot of a fully functional login & registration made with
+                Python. <a href="https://github.com/EzekielLoves2Code/reallogin-reg">Code</a></p>
+            <img src="{%static 'css/images/loginreg.png'%}" alt="Project1" style="width: 450px; height: 250px;">
+
+            <div id="project2">
+                <p>I did a project for coding dojo that includes a database table inputed by user and likes count. 
+                    <a href="https://github.com/EzekielLoves2Code/solo-prj">Code</a>
+                </p>
+
+                <img src="{%static 'css/images/soloprj.png'%}" alt="Project2" style="width: 900px; height: 500px;">
+
+            </div>
+
+
+
+        </div>
+        <h1>Say somthing nice about Ezekiel</h1>
+        <form action="/createmessage" method="POST">
+            {% csrf_token %}
+            <textarea name="mess"></textarea>
+            <input type="submit" value="Post">
+
+
+        </form>
+        <div id="posts">
+            {%for msg in all_messages%}
+            <p>"{{msg.usermessage}}"</p>
+            {%endfor%}
+        </div>
+
+
+    </div>
+</body>
+
+</html>
