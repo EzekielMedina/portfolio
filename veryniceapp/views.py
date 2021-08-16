@@ -22,7 +22,11 @@ def createmess(request):
     Message.objects.create(
         usermessage=request.POST['mess']
     )
-    return redirect('/')
+    return redirect('/home')
+
+
+def cspage(request):
+    return render(request, 'comingsoon.html')
 
 
 def index(request):

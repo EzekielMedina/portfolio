@@ -19,7 +19,6 @@
 #header a{
     text-decoration: none;
     font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif
 
 
 }
@@ -106,7 +105,7 @@ body{
     justify-content: space-evenly;
 }
 #clothingpageheader{
-    width: 100%;
+    width: 55%;
     height:  80px;
 }
 #clothingpageheader a{
