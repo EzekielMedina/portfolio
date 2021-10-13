@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    
+    width: auto;
+    height: 150px;
+    background-color: rgb(19, 189, 219);
+    margin-top: -21px;
+    margin-left: -8px;
+    display: flex;
+    justify-content: space-around
+}
+#header a{
+    text-decoration: none;
+    font-size: 28px;
+
+
+}
+
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+#bio {
+    background-color: rgb(194, 250, 141);
+    /* width: 500px; 
+    height: 300px;
+    margin-left: -10px; 
+    padding-left: 19px;
+    justify-content: center;
+    align-items: center; */
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    font-size: 200%;
+    font-family: Arial;
+}
+body{
+    background-color: white;
+}
+#contactinfo{
+    background-color: coral;
+    height: 80px;
+    width: 250px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-left: auto;
+    display: block;
+    align-content: flex-end;
+    position: sticky;
+    top: 0px;
+
+
+}
+#nameheader{
+    color: white;
+}
+#project1{
+    width: 600px;
+    /* background-color: rgb(199, 196, 196); */
+    padding-left: 30px;
+    padding-right: 14px;
+    border-radius: 10px;
+    /* margin-bottom: 200px; */
+    
+}
+
+#body2{
+    background-color: rgb(255, 255, 255);
+}
+#bio2{
+    border-radius: 5px;
+    background-color: rgb(207, 224, 240);
+    width: 900px;
+    height: 400px;
+    padding-top: 20px;
+    margin-left: .5px;
+    font-size: 20px;
+
+}
+#projectheader{
+    color: rgb(44, 44, 243);
+    text-align: center;
+    /* margin-left: 500px; */
+    font-size: 80px;
+}
+#body2 a{
+    margin-left: 1200px;
+}
+
+#imgs{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+#clothingpageheader{
+    width: 55%;
+    height:  80px;
+}
+#clothingpageheader a{
+    margin-left: 1200px;
+}
+/* #website a{
+} */
+form, h1{
+    font-family: arial;
+}
+textarea{
+    border-radius: 10px;
+}
+input{
+    border-radius: 7px;
+    width: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 141, 221);
+}
+#posts, p{
+    font-family: arial;
+}
